@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2fc1ec56fd.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/icono.ico">
+    <title>YuguiAPI</title>
+  </head>
+
+  <body>
+    <div class="navBar">
+        <!-- Logo -->
+    <img class="logoImg" src="img/Logo.png" onclick="actualizar()">
+
+        <!-- Side bar -->
+    <div class="sideBar" id="sideBar">
+      <ul>
+        <li><img class="icons card" src="img/kindpng_1812384.png" onclick="getCards()"></li>
+        <li id="cross"><img class="icons lupa" id="lupa" src="img/lupa.png" onclick="search()"></li>
+        <li><img class="icons contact" src="img/telefono.png" onclick="contacto()"></li>
+      </ul>
+    </div>
+
+  </div>
+
+            <!-- Buscador de cartas -->
+            <div class="browCard" id="browser"></div>
+
+            <div class="presentacion" id="presentation">
+              <h2>Bienvenido</h2>
+              <p>Este es el buscador de cartas de Yu-Gu-Ho!. 
+                Aquí podrás descubrir una gran variedad de cartas
+                (¡Mas de 12.000!) viendo su precio,
+                tipo y a que set pertenece. Podrás buscar las cartas
+                de tu propio mazo e informarte de ellas.
+              </p>
+            </div>
+          <div id="contContact"></div>
+        <!-- Contenedor de las cartas -->
+
+    <div class="cardsCont" id="cardsCont"></div>
+            
+        <!-- Footer -->
+    <div class="footCont">
+      <p>Este sitio web tiene copyright &copy;</p>
+    </div>
+
+        <!-- Elace con Scripts -->
+    <script src="js/cards.js"></script>
+    <script src="js/browser.js"></script>
+    <script src="js/refresh.js"></script>
+ 
+  </body>
+</html>
